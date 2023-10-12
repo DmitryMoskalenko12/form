@@ -1,0 +1,58 @@
+.orderForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.input {
+ width: 760px;
+ height: 30px;
+}
+
+.inputLabel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.inputLabelCheck {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: start;
+  justify-content: start;
+}
+
+.fail {
+  border: 1px solid red;
+}
+
+.error {
+ color: red;
+}
+
+.button {
+  display: flex;
+  width: 300px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  color: white;
+  border: none;
+  background-color: lightgray;
+  cursor: pointer;
+  margin-top: 20px;
+  svg {
+    path {
+      fill: white;
+    }
+  }
+  &:disabled {
+    background-color: darkgray;
+    cursor: auto;
+  }
+}
